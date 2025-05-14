@@ -23,8 +23,8 @@ class Config(object):
     FREE_UPLOAD_LIMIT = 10737418240  # 10 GB = 10 * 1024 * 1024 * 1024
 
     # premium mode feature ✅
-    UPLOAD_LIMIT_MODE = True 
-    PREMIUM_MODE = True 
+    UPLOAD_LIMIT_MODE = False 
+    PREMIUM_MODE = False
     
     #force subs
     try:

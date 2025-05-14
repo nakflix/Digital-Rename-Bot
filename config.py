@@ -3,21 +3,21 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # digital_botz client config
-    API_ID = os.environ.get("API_ID", "")
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID = os.environ.get("API_ID", "14298205")
+    API_HASH = os.environ.get("API_HASH", "28df6d84da76d8606bf5f0e71ecfb62c")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7148807362:AAHsmCw_cfrgGvaKeR7VYgLwmaA1uKsLugA") 
 
     # premium account string session required 😢 
     STRING_SESSION = os.environ.get("STRING_SESSION", "")
     
     # database config
-    DB_NAME = os.environ.get("DB_NAME","Cluster0")
-    DB_URL = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","renamerbot")
+    DB_URL = os.environ.get("DB_URL","mongodb+srv://alphakiti:alpha3720@renamerbot.9ux2j.mongodb.net/?retryWrites=true&w=majority")
  
     # other configs
     START_PIC = os.environ.get("START_PIC", "https://telegra.ph/file/eb80582fa42f9bd412085.jpg")
-    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '1087141176').split()]
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001778606534"))
+    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '1458235021').split()]
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001870385542"))
 
     # free upload limit 
     FREE_UPLOAD_LIMIT = 10737418240  # 10 GB = 10 * 1024 * 1024 * 1024
@@ -28,9 +28,9 @@ class Config(object):
     
     #force subs
     try:
-        FORCE_SUB = int(os.environ.get("FORCE_SUB", "")) 
+        FORCE_SUB = int(os.environ.get("FORCE_SUB", "Nakflixtv")) 
     except:
-        FORCE_SUB = os.environ.get("FORCE_SUB", "Unlimited_Movie_Zone")
+        FORCE_SUB = os.environ.get("FORCE_SUB", "nakflixtv")
         
     # wes response configuration     
     PORT = int(os.environ.get("PORT", "8080"))
